@@ -1277,7 +1277,8 @@
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
-			}
+
+background: #f9ad55;			}
 
 				#header nav ul li:first-child {
 					border-left: 0;
@@ -1289,11 +1290,12 @@
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
+					/*text-transform: uppercase;
+*/					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
-				}
+
+font-family: Pacifico;				}
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
