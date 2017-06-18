@@ -8,7 +8,9 @@
 		<title>Jemima's Bakery - Premium Baked Goods in Lagos, Nigeria</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="theme-color" content="#f9ad55" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -21,13 +23,13 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logox">
-							<img src="images/jemimas-logo.png" alt="" style="max-width:150px; border: 1px solid white; position:relative; top:7px;"/>
+							<img src="images/jemimas-logo.png" alt="" style="max-width:175px; border: 1px solid white; position:relative; top:7px;"/>
 						</div>
 						<div class="content">
 							<div class="inner" style="
     font-family: 'Pacifico', cursive;">
 								<h1 style="color:#f9ad55;">Welcome to Jemima's Bakery</h1>
-								<p>The home of <em style="#f9ad55;">premium</em> baked goods in Lagos, Nigeria.</p>
+								<p>The home of <em style="color: #f9ad55;">premium</em> baked goods in Lagos, Nigeria.</p>
 							</div>
 						</div>
 						<nav>
@@ -35,7 +37,7 @@
 								<li><a href="#intro">About Us</a></li>
 								<li><a href="#work">Our Goods</a></li>
 								<li><a href="#about">Participate</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#contact">Contact Us</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -70,7 +72,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="post" action="https://api.cloudstitch.com/jemimas/contact-form-spreadsheet/datasources/sheet">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
@@ -78,6 +80,11 @@
 									<div class="field half">
 										<label for="email">Email</label>
 										<input type="text" name="email" id="email" />
+									</div>
+
+		<div class="field half first">
+										<label for="phone">Phone</label>
+										<input type="text" name="phone" id="phone" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -87,7 +94,8 @@
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
+<input type="hidden" name="Timestamp" id="Timestamp" >
+<input type="hidden" name="_redirect" value="http://welldone.ng/thanks.html" />								</form>
 								<ul class="icons" style="display:none;">
 									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
